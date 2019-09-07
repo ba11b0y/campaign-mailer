@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Campaign</title>
+</head>
+<body>
+<form action="send_email" method="post">
+    {% csrf_token %}
+Subject<input type="text" name="subject"><br>
+Preview text<input type="text" name="pre-text"><br>
+Article URL<input type="url" name="article-url"><br>
+HTML Content<input type="text" name="html-content"><br>
+Plain text content<input type="text" name="plain-text"><br>
+Published date<input type="date" name="pub-date"><br>
+    <input type="submit" value="Create campaign"><br>
+</form>
+
+</body>
+</html>

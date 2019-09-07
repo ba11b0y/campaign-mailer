@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+#  redis:
+#    image: partlab/ubuntu-redis
+#    restart: always
+#    ports:
+#      - 6379:6379
+  web:
+    build: .
+    ports:
+      - 8000:8000
+#    depends_on:
+#      - redis

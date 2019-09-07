@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unsubscribe</title>
+</head>
+<body>
+Unsubscribe from our mailing list
+<form action="unsub" method="post">
+    {% csrf_token %}
+    Enter your email<input type="email" name="email">
+<input type="submit" value="Unsubscribe">
+</form>
+</body>
+</html>
